@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <main> 
+        <h1>@Resources.Greeting</h1>
+
+        <img src="~/Static/@Resources.Flag" />
+        <p>@Resources.PartingMessage</p>
+
+        <ul>
+            <li>Culture: @ViewBag.Culture</li>
+            <li>UiCulture: @ViewBag.UiCulture</li>
+            <li>Route: @ViewBag.UrlCulture</li>
+        </ul>
+
+    </main>
+</body>
+</html>
