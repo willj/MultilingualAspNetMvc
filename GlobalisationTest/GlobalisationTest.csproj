@@ -95,10 +95,10 @@
   <ItemGroup>
     <Compile Include="Infrastructure\CulturedControllerFactory.cs" />
     <Compile Include="Models\Entry.cs" />
-    <Compile Include="Resources\Resources.fr-FR.designer.cs">
+    <Compile Include="Resources\Resources.fr.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.fr-FR.resx</DependentUpon>
+      <DependentUpon>Resources.fr.resx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -129,9 +129,9 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Resources.fr-FR.resx">
+    <EmbeddedResource Include="Resources\Resources.fr.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.fr-FR.designer.cs</LastGenOutput>
+      <LastGenOutput>Resources.fr.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Resources.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
