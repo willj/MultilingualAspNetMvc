@@ -17,6 +17,10 @@
         <img src="~/Static/@Resources.Flag" />
         <p>@Resources.PartingMessage</p>
 
+        <p><a href="@Url.Action("Send", "Home")">Relative Url</a></p>
+
+        <p><a href="@Url.Action("Send", "Home", null, Request.Url.Scheme)">Absolute Url</a></p>
+
         <ul>
             <li>Culture: @ViewBag.Culture</li>
             <li>UiCulture: @ViewBag.UiCulture</li>
