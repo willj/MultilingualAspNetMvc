@@ -12,6 +12,9 @@ namespace GlobalisationTest
     {
         public override IController CreateController(System.Web.Routing.RequestContext requestContext, string controllerName)
         {
+
+            string initialUICulture = Thread.CurrentThread.CurrentUICulture.EnglishName;
+
             try
             {
                 string cult = requestContext.RouteData.Values["culture"] as string;
@@ -32,4 +35,5 @@ namespace GlobalisationTest
         }
 
     }
+
 }

@@ -18,11 +18,11 @@ namespace GlobalisationTest
                 url: "{language}-{culture}/{controller}/{action}/{id}",
                 defaults: new { language = "en", culture = "GB", controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
-
+            
             routes.MapRoute(
                 name: "NoCulture",
                 url: "{controller}/{action}/{id}",
-                defaults: new { language = "en", culture = "GB", controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { /*language = "en", culture = "GB",*/ controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
         }
